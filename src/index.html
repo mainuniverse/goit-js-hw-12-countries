@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goit-js-hw-12-countries</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
 
     <div class="box">
-        <form class="search-form js-search-form">
-            <input type="search" id="search" placeholder="Country...">
-            <div class="form-error-box"></div>
-            <button type="input" class="icon btn"><i class="fa fa-search"></i></button>
-        </form>
+            <div class="">
+                <div >
+                    <input type="text" id="search" class="search-form" placeholder="Country..." />
+                    <button type="submit" id="icon btn">Search</button>
+                </div>
 
         <ul class="countries-list"></ul>
+        <div class="country-info"></div>
     </div>
-
+<script src="./index.js"></script>
 </body>
 
 </html>
