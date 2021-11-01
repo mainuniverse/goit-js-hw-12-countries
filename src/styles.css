@@ -3,7 +3,7 @@ body {
 }
 
 .box {
-  margin: 100px auto;
+  margin: 150px auto;
   width: 300px;
   height: 50px;
 }
@@ -42,4 +42,21 @@ body {
 }
 button {
   display: none;
+}
+.country-card {
+  display: block;
+}
+.card-description {
+  display: block;
+  margin-bottom: 20px;
+}
+.country-card {
+  display: block;
+}
+.card-description {
+  display: block;
+  margin-bottom: 20px;
+}
+.search-box {
+  padding-left: 40px;
 }
