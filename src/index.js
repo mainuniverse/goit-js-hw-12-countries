@@ -1,6 +1,6 @@
 //import './sass/main.scss';
 import fetchCountry from './js/fetchCountries';
-//import refs from './js/getRefs';
+import refs from './js/getRefs';
 import countryCard from './js/templates/countryAll.hbs';
 import countriesList from './js/templates/country-list.hbs';
 import debounce from 'lodash.debounce';
@@ -10,11 +10,11 @@ import '@pnotify/desktop/dist/PNotifyDesktop';
 import '@pnotify/core/dist/BrightTheme.css';
 import { error } from '@pnotify/core';
 
-const refs = {
-    search: document.querySelector('.search-form'),
-    country: document.querySelector('.countries-list'),
-    outputBox: document.querySelector('.country-info'),
-};
+// const refs = {
+//     search: document.querySelector('.search-form'),
+//     country: document.querySelector('.countries-list'),
+//     outputBox: document.querySelector('.country-info'),
+// };
 //let searchQuery = '';
 refs.search.addEventListener('input', debounce(searchCountry, 500));
 //inputRef.addEventListener('input', debounce(onInput, 500));
@@ -56,50 +56,8 @@ function fetchError(Error) {
     Error;
 }
 
-// inputRef.addEventListener('input', debounce(onInput, 500));
-
-// function searchCountry(e) {
-//   const itemCountry = e.target.value;
-//   if (itemCountry) {
-//     country.innerHTML = '';
-//     refs.outputBox.innerHTML = '';  
-//   }
-//    fetchCountry(valueCountry)
-//    .then(renderSearchCountries)
-//     .catch(fetchError);
-// };
 
 
-// function renderSearchCountries(countries) {
-//     if (countries.length > 10) {
-//         return error({ text: "Too many matches found. Please enter a more specific query!" });
-//     }
-
-//     if (countries.length >= 2 && countries.length <= 10) {
-//         markupCountryList(countries);
-//         return;
-//     }
-
-//     markupCountryInfo(countries);
-// }
-
-// function markupCountryList(countries) {
-//     const markupCountryList = countriesList(countries);
-//         refs.country.insertAdjacentHTML('beforeend', markupCountryList); 
-// }
-
-// function markupCountryInfo(countries) {
-//     const markup = countryCard(countries);
-//     refs.country.insertAdjacentHTML('beforeend', markup);
-// }
-
-// function searchCountry() {
-//     refs.country.innerHTML = '';
-//     searchQuery = refs.search.value; 
-//     fetchCountry(searchQuery)
-//         .then(renderSearchCountries)
-//         .catch(error => console.log(error))
-// }
 
 
 
@@ -136,10 +94,10 @@ function fetchError(Error) {
 //     refs.countries.insertAdjacentHTML('beforeend', listMarkup);
 // }
 
-// // function onInputClear() {
-// //     refs.outputBox.innerHTML = '';
-// //     refs.countries.innerHTML = '';
-// // }
+// function onInputClear() {
+//     refs.outputBox.innerHTML = '';
+//     refs.countries.innerHTML = '';
+// }
 
 // function onFetchError(Error) {
 //     Error;
@@ -147,9 +105,3 @@ function fetchError(Error) {
 // alert({
 //   text: 'Too many marches found. Please enter a more specific query!',
 // });
-
-
-// const inputRef = document.querySelector('.js_input');
-// const listRef = document.querySelector('.js_list');
-// const markup = document.querySelector('.js_markup');
-
